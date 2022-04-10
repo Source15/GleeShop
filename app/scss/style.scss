@@ -5,6 +5,76 @@
 
 
 
+//header
+.header {
+    padding: 42px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo__title {
+    margin-left: 20px;
+    color: $title;
+    font-size: 36px;
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__list-item+.menu__list-item {
+        padding-left: 36px;
+    }
+
+    &__list-link {
+        color: $title;
+        @extend%Rubik-Medium-500;
+        cursor: pointer;
+        font-size: 15px;
+    }
+}
+
+.user-nav {
+    display: flex;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 20px;
+        width: 178px;
+        background-image: url('../images/bg_title.png');
+    }
+
+    &__link {
+        position: relative;
+    }
+
+    &__num {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        color: #000;
+        top: -11px;
+        right: -7px;
+        text-align: center;
+        line-height: 17px;
+    }
+
+}
+
 
 
 @import 'media';
