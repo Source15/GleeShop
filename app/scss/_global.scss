@@ -1,7 +1,37 @@
+html,
+body {
+    height: 100%;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 
 .container {
     max-width: 1770px;
     margin: 0 auto;
     padding: 0 72px;
+}
+
+.logo__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo__title {
+    margin-left: 20px;
+    color: $title;
+    font-size: 36px;
+    @extend%Rubik-Medium-500;
 }
