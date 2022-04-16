@@ -28,17 +28,17 @@
   font-family: 500;
 }
 
-.product-item__price, .product__btn, .product-top__title, .about__title, .footer-top__title {
+.lamp-item__title, .product-item__price, .product__btn, .product-top__title, .about__title, .footer-top__title {
   font-family: "DMSans-Bold", sans-serif;
   font-family: 700;
 }
 
-.top-slider__text, .footer-bottom__link, .footer-bottom .footer-boottom__copy, .footer-top__phone, .footer-top__email, .footer-top__adress {
+.lamp-item__text, .top-slider__text, .footer-bottom__link, .footer-bottom .footer-boottom__copy, .footer-top__phone, .footer-top__email, .footer-top__adress {
   font-family: "Rubik-Regular", sans-serif;
   font-family: 400;
 }
 
-.top-slider__link, .top-slider__title, .menu__list-link, .logo__title {
+.lamp-item__link, .top-slider__link, .top-slider__title, .menu__list-link, .logo__title {
   font-family: "Rubik-Medium", sans-serif;
   font-family: 500;
 }
@@ -691,4 +691,61 @@ body {
   line-height: 40px;
   text-align: center;
   color: rgba(163, 187, 200, 0.8509803922);
+}
+
+.lamp {
+  padding: 70px 0 100px;
+}
+
+.lamp-items {
+  padding: 84px 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.lamp-item {
+  width: 876px;
+  background-color: #FCD7B6;
+  padding: 100px 100px 100px 383px;
+  position: relative;
+}
+.lamp-item__title {
+  width: 236px;
+  font-size: 26px;
+  line-height: 32px;
+  color: #234969;
+  margin-bottom: 30px;
+}
+.lamp-item__text {
+  width: 330px;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 36px;
+}
+.lamp-item__link {
+  color: rgba(67, 99, 114, 0.8509803922);
+  padding: 27px 18px 24px 20px;
+  border-radius: 5%;
+  border: 1px solid rgba(78, 144, 219, 0.8509803922);
+  display: block;
+  width: 200px;
+  font-size: 12px;
+  line-height: 15px;
+}
+.lamp-item__link svg {
+  margin-left: 59px;
+}
+.lamp-item__link svg path {
+  fill: rgba(67, 99, 114, 0.8509803922);
+}
+.lamp-item__img {
+  position: absolute;
+  left: 46px;
+  top: -121px;
 }
