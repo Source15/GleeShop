@@ -6,3 +6,5 @@ $(function() {
         autoplay: true
     });
 });
+
+  var mixer = mixitup('.product-content');
