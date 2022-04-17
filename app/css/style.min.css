@@ -28,7 +28,7 @@
   font-family: 500;
 }
 
-.lamp-item__title, .product-item__price, .product__btn, .product-top__title, .about__title, .footer-top__title {
+.design-item__subtitle, .design-item__title, .design__btn, .design-top__title, .lamp-item__title, .product-item__price, .product__btn, .product-top__title, .about__title, .footer-top__title {
   font-family: "DMSans-Bold", sans-serif;
   font-family: 700;
 }
@@ -246,6 +246,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #fff;
 }
 
 .main {
@@ -694,7 +695,7 @@ body {
 }
 
 .lamp {
-  padding: 70px 0 100px;
+  padding: 70px 0 50px;
 }
 
 .lamp-items {
@@ -748,4 +749,66 @@ body {
   position: absolute;
   left: 46px;
   top: -121px;
+}
+
+.design {
+  padding: 50px 0;
+}
+
+.design-top__title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.design__filter-btn {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.design__btn {
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  color: #8B8B8B;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.design__btn:hover {
+  color: #000;
+}
+
+.design-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px 30px;
+}
+
+.design-item {
+  max-width: 370px;
+  background-color: #f8f8f8;
+  border-radius: 5%;
+  position: relative;
+}
+.design-item__title {
+  font-size: 20px;
+  line-height: 24px;
+  width: 155px;
+  position: absolute;
+  top: 45px;
+  left: 39px;
+}
+.design-item__subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  color: #A3BBC8;
+  position: absolute;
+  top: 100px;
+  left: 39px;
 }
