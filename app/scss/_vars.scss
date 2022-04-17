@@ -30,3 +30,9 @@ $accent:#FCD7B6;
     font-family: 'MYRIADPRO-REGULAR', sans-serif;
     font-family: 400;
 }
+@function max($numbers...){
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...){
+  @return m#{i}n(#{$numbers});
+}
